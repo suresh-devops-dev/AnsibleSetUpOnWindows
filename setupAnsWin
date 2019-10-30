@@ -1,0 +1,25 @@
+Ansible on Windows
+=============
+1) create one ansible master node in AWS
+2) create user as "UN"
+3) install epel
+4) install ansible
+make sure all passauth yes and root allow with nopasswd
+
+i)
+spin windows server from aws.
+ii) run powershell script as run as administrator 
+this will aloow us to execute ansible from contorl machine
+
+iii)
+
+create a yml in control machine like below
+=====
+[win]
+172.31.47.9
+
+[win:vars]
+ansible_user=Administrator
+ansible_password=Bhavi@12345
+ansible_connection=winrm
+ansible_winrm_server_cert_validation=ignore
