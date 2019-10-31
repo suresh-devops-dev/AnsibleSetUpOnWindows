@@ -1,4 +1,4 @@
 ---
 - hosts: all
   name: test
-    shell: echo hi
+    shell: echo suresh
