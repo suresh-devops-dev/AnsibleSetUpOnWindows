@@ -1,0 +1,4 @@
+---
+- hosts: all
+  name: test
+    shell: echo hi
